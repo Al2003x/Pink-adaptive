@@ -85,8 +85,17 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 20px;
+  max-width: 320px;
+
+  @include tablet {
+    max-width: 660px;
+  }
+
+  @include for-desktop {
+    max-width: 960px;
+    padding: 0 10px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
