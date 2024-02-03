@@ -11,6 +11,7 @@
       background-image: url("../img/bg-back-mobile@2x.jpg");
     }
   }
+
   &--closed {
     background-position: center 0;
   }
@@ -19,11 +20,11 @@
     background-position: center 259px;
   }
 
-  &--closed &__nav {
+  &--closed .page-header__nav {
     background-color: var(--nav);
   }
 
-  &--opened &__nav {
+  &--opened .page-header__nav {
     background-color: var(--dark-blue);
   }
 
@@ -48,11 +49,11 @@
     }
   }
 
-  &--closed &__logo {
+  &--closed .page-header__logo {
     padding-bottom: 22px;
   }
 
-  &--opened &__logo {
+  &--opened .page-header__logo {
     padding-bottom: 25px;
   }
 
@@ -97,12 +98,12 @@
       height: 40px;
     }
 
-    &--opened &__logo,
-    &__logo {
+    &--opened .page-header__logo,
+    .page-header__logo {
       padding-bottom: 42px;
     }
 
-    &--closed &__logo {
+    &--closed .page-header__logo {
       padding-bottom: 43px;
       margin-bottom: 1px;
     }
@@ -130,19 +131,19 @@
       max-width: 960px;
     }
 
-    &--opened &__nav,
-    &--closed &__nav,
+    &--opened .page-header__nav,
+    &--closed .page-header__nav,
     &__nav {
       background-color: var(--nav);
     }
 
-    &--opened &__wrapper-nav,
-    &--closed &__wrapper-nav,
+    &--opened .page-header__wrapper-nav,
+    &--closed .page-header__wrapper-nav,
     &__wrapper-nav {
       display: flex;
     }
 
-    &r__logo-mobile {
+    &__logo-mobile {
       display: none;
     }
 
@@ -161,7 +162,7 @@
       height: 40px;
     }
 
-    &--closed &__logo {
+    &--closed .page-header__logo {
       margin-bottom: 0;
     }
   }
