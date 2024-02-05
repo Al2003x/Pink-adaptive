@@ -13,7 +13,6 @@
   margin: 0 9px;
   width: 6px;
   height: 6px;
-
   background-color: var(--down-link);
   border: none;
   border-radius: 50%;
@@ -34,7 +33,6 @@
 .slider__input--three:checked ~ .slider__wrapper .slider__toggle--three {
   width: 6px;
   height: 6px;
-
   background-color: var(--light-color);
   border: 3px solid var(--dark-blue);
 }
