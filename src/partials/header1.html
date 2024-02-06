@@ -1,0 +1,85 @@
+<header class="page-header">
+  <nav class="page-header__nav">
+    <div class="page-header__wrapper-nav">
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__logo-mobile" width="75" height="22">
+          <use xlink:href="#header-logo-mobile"></use>
+        </svg>
+
+        <svg class="page-header__logo-tablet" width="147" height="40">
+          <use xlink:href="#header-logo-tablet"></use>
+        </svg>
+
+        <svg class="page-header__logo-desktop" width="147" height="40">
+          <use xlink:href="#header-logo-desktop"></use>
+        </svg>
+      </a>
+
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <svg class="main-nav__burger" width="49" height="24">
+            <use xlink:href="#burger"></use>
+          </svg>
+
+          <svg class="main-nav__cross" width="22" height="23">
+            <use xlink:href="#cross"></use>
+          </svg>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+
+  <div class="page-header__wrapper container">
+    <section class="promo">
+      <h1 class="visually-hidden">Пинк - раскрасьте серые будни</h1>
+      <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+      <picture>
+        <source type="image/webp" media="(min-width: 960px)"
+          srcset="img/iphone-hand-desktop2@2x.webp 2x, img/iphone-hand-desktop2@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 660px)"
+          srcset="img/iphone-hand-tablet2@2x.webp 2x, img/iphone-hand-tablet2@1x.webp 1x">
+        <source type="image/webp" srcset="img/iphone-hand-mobile@2x.webp 2x, img/iphone-hand-mobile@1x.webp 1x">
+
+        <source media="(min-width: 960px)"
+          srcset="img/iphone-hand-desktop2@2x.png 2x, img/iphone-hand-desktop2@1x.png 1x">
+        <source media="(min-width: 660px)"
+          srcset="img/iphone-hand-tablet2@2x.png 2x, img/iphone-hand-tablet2@1x.png 1x">
+        <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
+          width="258" height="286" alt="example">
+      </picture>
+
+      <div class="promo__download">
+        <a class="promo__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <ul class="promo__list list-icon">
+          <li class="list-icon__item">
+            <a class="list-icon__link list-icon__link--apple" href="https://www.apple.com/ru/ios/app-store/"
+              aria-label="apple"></a>
+          </li>
+          <li class="list-icon__item">
+            <a class="list-icon__link list-icon__link--android" href="https://play.google.com/store"
+              aria-label="android"></a>
+          </li>
+          <li class="list-icon__item">
+            <a class="list-icon__link list-icon__link--windows" href="https://www.microsoft.com/ru-ru/store/b/home"
+              aria-label="windows"></a>
+          </li>
+        </ul>
+        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+  </div>
+</header>

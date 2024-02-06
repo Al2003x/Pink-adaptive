@@ -1,0 +1,46 @@
+.checkbox {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--dark-blue);
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: var(--white);
+  border: 2px solid var(--grey);
+}
+
+.checkbox__input:checked + .checkbox__icon {
+  background-image: url("../img/icon-yes-form.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox__input:hover + .checkbox__icon {
+  border: 2px solid var(--dark-blue);
+}
+
+.checkbox__input:focus + .checkbox__icon {
+  cursor: pointer;
+  border: 2px solid var(--dark-blue);
+  outline: 2px solid var(--focus);
+}
+
+.checkbox__input:active + .checkbox__icon {
+  border: 2px solid var(--pink);
+}
+
+@media (min-width: 660px) {
+  .checkbox__icon {
+    left: 58px;
+  }
+}
