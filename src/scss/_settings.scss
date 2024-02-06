@@ -2,12 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
@@ -18,7 +12,12 @@ html {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 16px;
+  font-family: var(--font-family), "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  background-color: var(--light-color);
 }
 
 img {
@@ -80,8 +79,17 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 20px;
+  max-width: 320px;
+
+  @include tablet {
+    max-width: 660px;
+  }
+
+  @include for-desktop {
+    max-width: 960px;
+    padding: 0 10px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

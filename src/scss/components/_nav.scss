@@ -1,0 +1,91 @@
+.main-nav {
+  position: relative;
+  background-color: var(--dark-blue);
+
+  &__toggle {
+    position: absolute;
+    top: -48px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+    color: var(--light-color);
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: var(--pink);
+    }
+
+    &:active {
+      color: var(--down-mobile);
+    }
+  }
+
+  &__list {
+    background-color: var(--dark-blue);
+  }
+
+  &--closed .main-nav__cross,
+  &--closed .main-nav__list {
+    display: none;
+  }
+
+  &--closed .main-nav__toggle {
+    top: -46px;
+  }
+
+  &--closed .main-nav__burger {
+    width: 49px;
+    height: 24px;
+  }
+
+  &--opened .main-nav__burger {
+    display: none;
+  }
+
+  &--opened .main-nav__cross {
+    display: block;
+    width: 22px;
+    height: 23px;
+  }
+
+  &--opened .main-nav__list {
+    position: static;
+
+    display: block;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .main-nav__toggle {
+    top: -64px;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    top: -67px;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-nav--opened .main-nav__list,
+  .main-nav--closed .main-nav__list,
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    margin: 45px 0 47px auto;
+    background-color: transparent;
+  }
+}

@@ -1,7 +1,7 @@
 /* stylelint-disable */
 
 @mixin for-desktop {
-  @media (min-width: (1025px)) {
+  @media (min-width: (960px)) {
     @content;
   }
 }
@@ -13,7 +13,7 @@
 }
 
 @mixin tablet {
-  @media (max-width: (1024px)) {
+  @media (min-width: (660px)) {
     @content;
   }
 }
