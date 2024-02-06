@@ -1,25 +1,11 @@
 .connections {
   position: relative;
   background-color: var(--light-color);
-  z-index: 1;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    bottom: -68px;
-    width: 100%;
-    height: 123px;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
-  }
 
   &__wrapper {
     text-align: center;
   }
+
   &s__question,
   &__link {
     padding: 0;
@@ -163,5 +149,82 @@
     &__link {
       line-height: 27px;
     }
+  }
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 45vw;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    z-index: 10;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+  }
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 660px) {
+  .map {
+    height: 373px;
+
+    &::after {
+      bottom: 150px;
+      left: 49vw;
+    }
+    
+  }
+
+  .map__image {
+    top: -346px;
+    width: 700px;
+  }
+}
+
+@media (min-width: 960px) {
+  .map {
+    height: 522px;
+
+    &::after {
+      bottom: 225px;
+      left: 49vw;
+    }
+  }
+
+  .map__image {
+    bottom: -31px;
   }
 }

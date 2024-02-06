@@ -16,7 +16,6 @@
 .tarrif {
   position: relative;
   background-color: var(--light-grey);
-  z-index: 1;
 
   &__wrapper {
     position: relative;
@@ -149,13 +148,19 @@
 }
 
 @media (min-width: 660px) {
+
+  .tarrif__btn--two:checked ~ .tarrif__list,
+  .tarrif__btn--one:checked ~ .tarrif__list,
+  .tarrif__btn--three:checked ~ .tarrif__list {
+    transform: translateX(0);
+  }
+
   .tarrif__wrapper {
     padding: 95px 0 68px 0;
   }
 
   .tarrif__list {
     width: 618px;
-
     transform: none;
   }
 
